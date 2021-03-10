@@ -1,12 +1,21 @@
-import React from 'react';
+import React,{ FC } from 'react';
 import './App.css';
 
-function App() {
+const App: FC = () => {
   return (
     <div className="app">
-      <h1>This is client-side!</h1>
+      <div className="header">
+        <div className="header__inputs">
+          <input type="text" placeholder="Task..." />
+          <input type="number" placeholder="Deadline (in days)..." />
+        </div>
+        <button>Add Task</button>
+      </div>
+      <div className="list">
+      </div>
     </div>
   );
+  
 }
 
 export default App;
